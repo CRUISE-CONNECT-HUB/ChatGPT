@@ -1,0 +1,27 @@
+{
+    "mcpServers":  {
+                       "desktop-commander":  {
+                                                 "args":  [
+                                                              "run",
+                                                              "-i",
+                                                              "--rm",
+                                                              "-v",
+                                                              "dc-system:/usr",
+                                                              "-v",
+                                                              "dc-home:/root",
+                                                              "-v",
+                                                              "dc-workspace:/workspace",
+                                                              "-v",
+                                                              "dc-packages:/var",
+                                                              "-v",
+                                                              "C:\\Users\\user:/home/Users/user",
+                                                              "-v",
+                                                              "D:\\:/home/",
+                                                              "-v",
+                                                              "C:\\:/home/",
+                                                              "mcp/desktop-commander:latest"
+                                                          ],
+                                                 "command":  "docker"
+                                             }
+                   }
+}
