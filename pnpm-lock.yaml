@@ -56,7 +56,7 @@ importers:
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.2.1
-        version: 4.2.1(vite@5.2.11(@types/node@20.12.12))
+        version: 4.2.1(supports-color@5.5.0)(vite@5.2.11(@types/node@20.12.12))
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -74,7 +74,7 @@ importers:
         version: 5.2.11(@types/node@20.12.12)
       vite-tsconfig-paths:
         specifier: ^4.3.2
-        version: 4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12))
+        version: 4.3.2(supports-color@5.5.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12))
 
 packages:
 
@@ -1045,8 +1045,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  source-map-js@1.2.0:
-    resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
+  source-map-js@1.2.2:
+    resolution: {integrity: sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==}
     engines: {node: '>=0.10.0'}
 
   string-width@4.2.3:
@@ -1201,20 +1201,20 @@ snapshots:
 
   '@babel/compat-data@7.24.4': {}
 
-  '@babel/core@7.24.5':
+  '@babel/core@7.24.5(supports-color@5.5.0)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.24.2
       '@babel/generator': 7.24.5
       '@babel/helper-compilation-targets': 7.23.6
-      '@babel/helper-module-transforms': 7.24.5(@babel/core@7.24.5)
-      '@babel/helpers': 7.24.5
+      '@babel/helper-module-transforms': 7.24.5(@babel/core@7.24.5(supports-color@5.5.0))
+      '@babel/helpers': 7.24.5(supports-color@5.5.0)
       '@babel/parser': 7.24.5
       '@babel/template': 7.24.0
-      '@babel/traverse': 7.24.5
+      '@babel/traverse': 7.24.5(supports-color@5.5.0)
       '@babel/types': 7.24.5
       convert-source-map: 2.0.0
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@5.5.0)
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -1251,9 +1251,9 @@ snapshots:
     dependencies:
       '@babel/types': 7.24.5
 
-  '@babel/helper-module-transforms@7.24.5(@babel/core@7.24.5)':
+  '@babel/helper-module-transforms@7.24.5(@babel/core@7.24.5(supports-color@5.5.0))':
     dependencies:
-      '@babel/core': 7.24.5
+      '@babel/core': 7.24.5(supports-color@5.5.0)
       '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-module-imports': 7.24.3
       '@babel/helper-simple-access': 7.24.5
@@ -1276,10 +1276,10 @@ snapshots:
 
   '@babel/helper-validator-option@7.23.5': {}
 
-  '@babel/helpers@7.24.5':
+  '@babel/helpers@7.24.5(supports-color@5.5.0)':
     dependencies:
       '@babel/template': 7.24.0
-      '@babel/traverse': 7.24.5
+      '@babel/traverse': 7.24.5(supports-color@5.5.0)
       '@babel/types': 7.24.5
     transitivePeerDependencies:
       - supports-color
@@ -1295,14 +1295,14 @@ snapshots:
     dependencies:
       '@babel/types': 7.24.5
 
-  '@babel/plugin-transform-react-jsx-self@7.24.5(@babel/core@7.24.5)':
+  '@babel/plugin-transform-react-jsx-self@7.24.5(@babel/core@7.24.5(supports-color@5.5.0))':
     dependencies:
-      '@babel/core': 7.24.5
+      '@babel/core': 7.24.5(supports-color@5.5.0)
       '@babel/helper-plugin-utils': 7.24.5
 
-  '@babel/plugin-transform-react-jsx-source@7.24.1(@babel/core@7.24.5)':
+  '@babel/plugin-transform-react-jsx-source@7.24.1(@babel/core@7.24.5(supports-color@5.5.0))':
     dependencies:
-      '@babel/core': 7.24.5
+      '@babel/core': 7.24.5(supports-color@5.5.0)
       '@babel/helper-plugin-utils': 7.24.5
 
   '@babel/template@7.24.0':
@@ -1311,7 +1311,7 @@ snapshots:
       '@babel/parser': 7.24.5
       '@babel/types': 7.24.5
 
-  '@babel/traverse@7.24.5':
+  '@babel/traverse@7.24.5(supports-color@5.5.0)':
     dependencies:
       '@babel/code-frame': 7.24.2
       '@babel/generator': 7.24.5
@@ -1321,7 +1321,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.24.5
       '@babel/parser': 7.24.5
       '@babel/types': 7.24.5
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@5.5.0)
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -1593,11 +1593,11 @@ snapshots:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
 
-  '@vitejs/plugin-react@4.2.1(vite@5.2.11(@types/node@20.12.12))':
+  '@vitejs/plugin-react@4.2.1(supports-color@5.5.0)(vite@5.2.11(@types/node@20.12.12))':
     dependencies:
-      '@babel/core': 7.24.5
-      '@babel/plugin-transform-react-jsx-self': 7.24.5(@babel/core@7.24.5)
-      '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.5)
+      '@babel/core': 7.24.5(supports-color@5.5.0)
+      '@babel/plugin-transform-react-jsx-self': 7.24.5(@babel/core@7.24.5(supports-color@5.5.0))
+      '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.5(supports-color@5.5.0))
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
       vite: 5.2.11(@types/node@20.12.12)
@@ -1706,9 +1706,11 @@ snapshots:
 
   csstype@3.1.3: {}
 
-  debug@4.3.4:
+  debug@4.3.4(supports-color@5.5.0):
     dependencies:
       ms: 2.1.2
+    optionalDependencies:
+      supports-color: 5.5.0
 
   didyoumean@1.2.2: {}
 
@@ -1956,7 +1958,7 @@ snapshots:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.0
-      source-map-js: 1.2.0
+      source-map-js: 1.2.2
 
   queue-microtask@1.2.3: {}
 
@@ -2045,7 +2047,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  source-map-js@1.2.0: {}
+  source-map-js@1.2.2: {}
 
   string-width@4.2.3:
     dependencies:
@@ -2142,9 +2144,9 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-tsconfig-paths@4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12)):
+  vite-tsconfig-paths@4.3.2(supports-color@5.5.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12)):
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@5.5.0)
       globrex: 0.1.2
       tsconfck: 3.0.3(typescript@5.4.5)
     optionalDependencies:
